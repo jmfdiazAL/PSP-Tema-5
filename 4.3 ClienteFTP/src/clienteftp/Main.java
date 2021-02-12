@@ -59,7 +59,7 @@ public class Main {
       //creación del objeto cliente FTP
       clienteFTP = new FTPClient();
       //conexión del cliente al servidor FTP
-      clienteFTP.connect("ftp.rediris.es");
+      clienteFTP.connect(servidorURL);
       //omprobación de la conexión
       reply = clienteFTP.getReplyCode();
       //si la conexión  es satisfactoria
